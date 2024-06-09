@@ -1,16 +1,36 @@
 # InventarioJorge
 
-Este proyecto es una aplicación de gestión de inventario construida con Django por Jorge Moncayo.
+## Descripción
+
+InventarioJorge es una aplicación de gestión de inventarios desarrollada con Django. Permite gestionar productos y categorías, incluyendo la creación, edición y eliminación de registros.
 
 ## Requisitos
 
 - Python 3.6+
 - PostgreSQL
 
-## Configuración del Proyecto
+## Instalación
 
-### 1. Clonar el Repositorio
+### Clonar el repositorio
 
 ```bash
-git clone https://github.com/tuusuario/tu-repositorio.git
-cd tu-repositorio
+git clone https://github.com/tu_usuario/InventarioJorge.git
+cd InventarioJorge
+# InventarioJorge
+
+## Descripción
+
+InventarioJorge es una aplicación de gestión de inventarios desarrollada con Django. Permite gestionar productos y categorías, incluyendo la creación, edición y eliminación de registros.
+
+## Requisitos
+
+- Python 3.6+
+- PostgreSQL
+
+## Instalación
+
+### Clonar el repositorio
+
+```bash
+git clone https://github.com/Jorgeimlz/InventarioJorge
+cd InventarioJorge
