@@ -6,6 +6,7 @@ from inventarios.views import custom_permission_denied_view
 handler403 = custom_permission_denied_view
 
 urlpatterns = [
+    path('admin/logout/', auth_views.LogoutView.as_view(next_page='/admin/login/?next=/admin/'), name='admin_logout'),
     path('admin/', admin.site.urls),
     path('inventarios/', include(('inventarios.urls', 'inventarios'), namespace='inventarios')),
     path('accounts/login/', auth_views.LoginView.as_view(), name='login'),
