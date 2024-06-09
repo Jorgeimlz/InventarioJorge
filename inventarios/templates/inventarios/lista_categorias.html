@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Categorías{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Lista de Categorías</h1>
+    <a href="{% url 'inventarios:categorias_create' %}" class="btn btn-primary mb-2">Nueva Categoría</a>
+    <ul class="list-group">
+        {% for categoria in categorias %}
+            <li class="list-group-item">
+                {{ categoria.nombre }}
+                <a href="{% url 'inventarios:categorias_update' categoria.pk %}" class="btn btn-sm btn-info">Editar</a>
+                <a href="{% url 'inventarios:categorias_delete' categoria.pk %}" class="btn btn-sm btn-danger">Eliminar</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
